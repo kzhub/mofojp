@@ -30,8 +30,10 @@ a:active { color: #333333; }
 
 
 img#logo{
-  width:19%;
+  width:16%;
   min-width: 170px;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 
 img{
@@ -90,3 +92,23 @@ p#from{
   margin-bottom: 2rem;
   font-family: 'Raleway', sans-serif;
 }
+
+div.movie{
+  margin-bottom: 8rem;
+}
+
+.scroll-top {
+position: fixed;
+right: 20px;
+bottom: 20px;
+z-index: 100;
+background-color: #999;
+opacity: .8;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: none;
+color: #fff;
+}
+.scroll-top:hover {
+cursor: pointer;
