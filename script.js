@@ -21,3 +21,13 @@ function pen3(){
   mask.style.display = 'none';
 
 }
+
+function fadein() {
+  let ai = document.getElementById('tes1')
+  ai.animate([{opacity: '0'}, {opacity: '1'}], 1500)
+}
+
+function asd() {
+  let aiu = document.getElementById('tes2')
+  aiu.animate([{opacity: '0'}, {opacity: '1'}], 1500)
+}

@@ -11,7 +11,7 @@ margin: 0px auto;
 padding: 0px;
 text-align: center;
 font-size: 16px;/*rem指定のための基準サイズ */
-background-color: #F2F2F2;
+background-color: white;
 }
 p{
   font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
@@ -19,7 +19,7 @@ p{
 }
 
 li{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Manrope', sans-serif;
   display: inline;
   font-size: 1rem;
   color: #333333;
@@ -30,8 +30,8 @@ li{
 
 a:link { color: #696969; }
 a:visited { color: #696969; }
-a:hover { color: #333333; }
-a:active { color: #333333; }
+a:hover { color: #008080 ;}
+a:active {color: #008080 ;}
 
 
 img#logo{
@@ -188,4 +188,14 @@ div#mask {
 
 .point{
   cursor: pointer;
+  animation: fadeIn 1s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+
+p #mail{
+  border: solid black;
 }
