@@ -22,12 +22,7 @@ function pen3(){
 
 }
 
-function fadein() {
-  let ai = document.getElementById('tes1')
-  ai.animate([{opacity: '0'}, {opacity: '1'}], 1500)
-}
-
-function asd() {
-  let aiu = document.getElementById('tes2')
-  aiu.animate([{opacity: '0'}, {opacity: '1'}], 1500)
+function hide(){
+  let ab= document.getElementById('kesu');
+  ab.style.display = 'none';
 }
