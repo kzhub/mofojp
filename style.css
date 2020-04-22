@@ -13,6 +13,10 @@ text-align: center;
 font-size: 16px;/*rem指定のための基準サイズ */
 background-color: #F2F2F2;
 }
+p{
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #484848;
+}
 
 li{
   font-family: 'Raleway', sans-serif;
@@ -49,30 +53,28 @@ header{
 
 main{
   margin: 2rem;
-
-
 }
 
 section#galla {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left:13%;
-  margin-right: 13%;
+  margin-left:9%;
+  margin-right: 7%;
 }
 
 section#galla article {
-  width: 420px;
-  margin-bottom: 2rem;
+  width: 480px;
+  margin-bottom: 4rem;
   line-height: 150%;
   overflow: hidden;
-
+  border-radius: 8px;
 }
 
 section#galla img {
   width: 100%;
   transition: 0.5s;
-
+  border-radius: 2px;
 }
 
 section#galla img:hover {
@@ -89,7 +91,7 @@ div#sns  a{
 }
 
 p#from{
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
   font-family: 'Raleway', sans-serif;
   color: #008080;
 }
@@ -98,32 +100,89 @@ div.movie{
   margin-bottom: 8rem;
 }
 
-.scroll-top {
-position: fixed;
-right: 20px;
-bottom: 20px;
-z-index: 100;
-background-color: #999;
-opacity: .8;
-width: 50px;
-border: none;
-color: #fff;
-}
-.scroll-top:hover {
-cursor: pointer;
-}
 
 div.livesec{
   background-color: #333333;
-  height: 700px;
+  height: 500px;
 }
 
 div.consec{
   background-color: #white;
-  height: 700px;
+  height: 450px;
 }
 
 img.mokuzi{width: 20%;
   max-width: 190px;
 margin-top: 1rem;
+padding-bottom: 0.6rem;
+border-bottom: 1.2px solid #333333;
+}
+img.mokuzi2{width: 7%;
+  max-width: 190px;
+margin-top: 1rem;
+padding-bottom: 0.6rem;
+border-bottom: 1.2px solid white;
+}
+
+div#mailbox{
+  margin: 5rem;
+}
+
+div.livesec ul{
+  margin-top: 1rem;
+  color: #c6c6c6;
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+div.day{
+  margin: 5rem;
+}
+
+
+
+div#mask {
+  cursor: pointer;
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  display: none;
+  background: #fff;
+  color: #555;
+  width: 70%;
+  height: auto;
+  padding: 3%;
+  border-radius: 4px;
+  position: fixed;/* 重要*/
+	top: 50%;/* 重要*/
+	left: 50%;/* 重要*/
+	transform: translate(-50%, -50%);/* 重要*/
+  margin: 0 auto;
+  z-index: 2;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.movie-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.movie-wrap iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.point{
+  cursor: pointer;
 }
