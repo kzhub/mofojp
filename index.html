@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <body>
     <header>
       <div id=top>
@@ -19,10 +20,10 @@
       </div>
       <div class="nav">
       <li><a href="music.html">Music</a></li>
-      <li><a href="live.html">Live</a></li>
+      <li><a href="#live">Live</a></li>
       <li><a href="bio.html">Bio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html">Link</a></li>
+      <li><a href="#cont">Contact</a></li>
+      <li><a href="#sns">Link</a></li>
       </div>
       </header>
       <main>
@@ -47,7 +48,7 @@
 
       </main>
 
-      <div class="livesec">
+      <div class="livesec" id="live">
         <img src="index2.png" class="mokuzi2">
         <div class="day">
         <ul>-2020年1月30日(木)
@@ -62,7 +63,7 @@
 </div>
       </div>
 
-      <div class="consec">
+      <div class="consec" id="cont">
         <img src="index3.png" alt="" class="mokuzi"><i class="fas fa-microphone-alt fa-3x"></i>
 
        <div id="mailbox">
@@ -94,11 +95,30 @@
     <a href="https://www.youtube.com/channel/UCxTqykWVNZ-_SduU85az5mg"><i class="fab fa-youtube fa-2x"></i></a>
     <a href="https://twitter.com/mofo_tw"><i class="fab fa-twitter fa-2x"></i></a>
     <a href="index.html"><i class="fab fa-instagram fa-2x"></i></a>
-
-
    </div>
 
-   <a href="#top"><i class="fas fa-chevron-circle-up fa-2x"></i></a>
+   <a href="#top" id="bot"><i class="fas fa-chevron-circle-up fa-2x" ></i></a>
+    <script>
+   $(function () {
+       var topBtn = $('#bot');
+       topBtn.hide();
+       //スクロールが500に達したらボタン表示
+       $(window).scroll(function () {
+           if ($(this).scrollTop() > 300) {
+               topBtn.fadeIn();
+           } else {
+               topBtn.fadeOut();
+           }
+       });
+       //スルスルっとスクロールでトップへもどる
+       topBtn.click(function () {
+           $('body,html').animate({
+               scrollTop: 0
+           }, 500);
+           return false;
+       });
+   });
+       </script>
    <br><br>
    <p>Copyright © 2020 Mofo All Right Reserved</p>
   </footer>
